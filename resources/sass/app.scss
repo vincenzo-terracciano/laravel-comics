@@ -6,3 +6,84 @@
 
 // Bootstrap
 @import 'bootstrap/scss/bootstrap';
+
+// Common
+@import 'style/common';
+
+:root {
+    --comics-dark: #1c1c1c;
+    --comics-primary: #0282f9;
+    --comics-end: #303030;
+    --comics-menu: #535461;
+}
+
+body {
+    background-color: var(--comics-dark);
+}
+
+header {
+    background-color: white;
+}
+
+.jumbotron {
+    background-image: url('/public/img/jumbotron.jpg');
+    background-position: center top;
+    background-size: cover;
+    padding: 200px 0;
+}
+
+.footer-top {
+    background-image: url('/public/img/footer-bg.jpg');
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+
+    .logo-footer {
+        position: absolute;
+        top: -20%;
+        right: 30%;
+        width: 350px;
+    }
+}
+
+.footer-bottom {
+    background-color: var(--comics-end);
+}
+
+.footer-bottom-left .btn {
+    color: rgba(255, 255, 255, 0.846);
+    padding: 10px 20px;
+}
+
+.section-title {
+    background-color: var(--comics-primary);
+    color: white;
+    display: inline-block;
+    font-size: 30px;
+    padding: 10px 30px;
+    transform: translateY(-50%);
+    margin: 0;
+}
+
+.card {
+    border: none;
+    background-color: var(--comics-dark);
+}
+
+.card-img-top {
+    height: 300px;
+}
+
+.thumb img {
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 1rem;
+}
+
+.shop-link {
+    background-color: var(--comics-primary);
+}
+
+.locator {
+    width: 35px !important;
+}

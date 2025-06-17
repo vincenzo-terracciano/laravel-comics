@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+h6 {
+    color: rgba(255, 255, 255, 0.846);
+}
+
+.card-shop img {
+    width: 50px;
+}
+
+.card-shop a {
+    color: rgba(255, 255, 255, 0.846);
+}
+
+h3 {
+    color: var(--comics-primary);
+}
+
+.button .btn {
+    padding: 5px 50px;
+}
+
+header a {
+
+    position: relative;
+
+    &:hover {
+        color: var(--comics-primary) !important;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -72px;
+            width: 100%;
+            height: 3px;
+            background-color: var(--comics-primary);
+        }
+    }
+}
+
+.logo a {
+
+    &:hover::after {
+        content: none;
+    }
+}
+
+footer a:hover {
+    color: rgba(255, 255, 255, 0.846);
+}
